@@ -10,7 +10,8 @@ from myshop.lib import config
 #@login_required
 def home_shop(section):
     print "section", section
-    return render_template('pages/'+section+'/index.html', section=section)
+    url = "http://localhost:1110"
+    return render_template('pages/'+section+'/index.html', section=section, url=url)
 
 @app.route("/<section>/<page>")
 @login_required

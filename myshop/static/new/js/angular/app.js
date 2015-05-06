@@ -1,14 +1,14 @@
   
     //console.log("SECTION", SECTION);
-    var HirealchemyHcl = angular.module('HirealchemyHcl', ["highcharts-ng", "ngRoute"]);
+    var MyShop = angular.module('MyShop', ["ngRoute"]);
 
-	HirealchemyHcl.config(['$interpolateProvider', function($interpolateProvider) {
+	MyShop.config(['$interpolateProvider', function($interpolateProvider) {
       $interpolateProvider.startSymbol('{[');
       $interpolateProvider.endSymbol(']}');
     }]);
 
 	
-    HirealchemyHcl.config(['$routeProvider', function($routeProvider, SECTION) {
+    MyShop.config(['$routeProvider', function($routeProvider, SECTION) {
     	var SECTION = 'hcl';
 	    $routeProvider.
 	      when('/', {
