@@ -31,9 +31,9 @@ login_manager.init_app(app)
 login_manager.login_view = 'login'
 
 #logging.basicConfig(format='%(asctime)s|%(levelname)s|%(message)s', filemode = 'w', filename = config.LOGFILE,level = config.LOGLEVEL, datefmt = '%m/%d/%Y %H:%M:%S')
-cache = Cache(app, config={'CACHE_TYPE': 'filesystem', 'CACHE_DIR': conf.CACHE_DIR})
+#cache = Cache(app, config={'CACHE_TYPE': 'filesystem', 'CACHE_DIR': conf.CACHE_DIR})
 
-cache.clear()
+#cache.clear()
 
 app.secret_key = conf.SECRET_KEY
 
